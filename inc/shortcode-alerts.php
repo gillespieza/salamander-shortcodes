@@ -28,7 +28,7 @@ function sbs_alert_boxes( $atts, $content = null, $tag ) {
 	// Extract shortcode attributes.
 	$atts = shortcode_atts(
 		array(
-			'class' => 'alert', // default.
+			'class' => '', // default.
 			'style' => '',
 		),
 		$atts
@@ -38,7 +38,7 @@ function sbs_alert_boxes( $atts, $content = null, $tag ) {
 	$style_attr = ( ! empty( $atts['style'] ) ) ? ' style="' . esc_attr( $atts['style'] ) . '"' : '';
 
 	// Set class attribute with the tag name and any additional classes.
-	$class_attr = ' class="alert ' . esc_attr( $tag . ' ' . $atts['class'] ) . '"';
+	$class_attr = ' class="' . esc_attr( $tag . ' ' . $atts['class'] ) . '"';
 
 	// Generate and return the alert box markup.
 	return '<div' . $class_attr . $style_attr . '>' . do_shortcode( $content ) . '</div>';

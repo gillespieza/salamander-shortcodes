@@ -44,7 +44,7 @@ add_action( 'plugins_loaded', 'sbs_plugin_init' );
 require_once dirname( __FILE__ ) . '/inc/styles-scripts.php'; // loads the stylesheets and scripts.
 require_once dirname( __FILE__ ) . '/inc/shortcode-alerts.php';
 require_once dirname( __FILE__ ) . '/inc/shortcode-callout.php';
-require_once dirname( __FILE__ ) . '/inc/shortcode-columns.php';
+// require_once dirname( __FILE__ ) . '/inc/shortcode-columns.php'; // these don't work since Gutenberg was released.
 require_once dirname( __FILE__ ) . '/inc/shortcode-divider.php';
 require_once dirname( __FILE__ ) . '/inc/shortcode-dropcaps.php';
 require_once dirname( __FILE__ ) . '/inc/shortcode-hr.php';
