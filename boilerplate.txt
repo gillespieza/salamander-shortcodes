@@ -1,0 +1,916 @@
+[one_third]
+<ul>
+	<li><a href="#headings">Simple text headings</a></li>
+	<li><a href="#headlines">Headlines with highlights and subtitles</a></li>
+	<li><a href="#listsStyles">List Styles</li>
+	<li><a href="#blockquotes">Blockquotes</a></li>
+</ul>
+[/one_third]
+[one_third]
+<ul>
+	<li><a href="#divider">Dividers, spacers and horizontal lines</a></li>
+	<li><a href="#dropcaps">DropCaps</a></li>
+	<li><a href="#images">Theme Styled Images</a></li>
+</ul>
+[/one_third]
+[one_third_last]
+<ul>
+	<li><a href="#tables">Tables</a></li>
+	<li><a href="#alertboxes">Alert Boxes</a></li>
+	<li><a href="#columns">Columns</a></li>
+</ul>
+[/one_third_last]
+
+[hr]
+<a id="headings"></a>
+[heading h="2"]Simple text headings[/heading]
+<p>Samples of the heading text for this theme: <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>, <code>&lt;h4&gt;</code>, <code>&lt;h5&gt;</code>, <code>&lt;h6&gt;</code>. If you aren't comfortable using the HTML editor, you can use this shortcode instead:</p>
+<code>&#91;heading h="1"&#93;Your Heading Text&#91;/heading&#93;</code>
+[one_half][heading h="1"]This is an h1 tag[/heading]
+<code>&#91;heading&#93;Your Heading Text&#91;/heading&#93;</code>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis.</p>
+[heading h="2"]This is an h2 tag[/heading]
+<code>&#91;heading h="2"&#93;Your Heading Text&#91;/heading&#93;</code>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis.</p>
+[heading h="3"]This is an h3 tag[/heading]
+<code>&#91;heading h="3"&#93;Your Heading Text&#91;/heading&#93;</code>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis.</p>[/one_half]
+[one_half_last][heading h="4"]This is an h4 tag[/heading]
+<code>&#91;heading h="4"&#93;Your Heading Text&#91;/heading&#93;</code>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis.</p>
+[heading h="5"]This is an h5 tag[/heading]
+<code>&#91;heading h="5"&#93;Your Heading Text&#91;/heading&#93;</code>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis.</p>
+[heading h="6"]This is an h6 tag[/heading]
+<code>&#91;heading h="6"&#93;Your Heading Text&#91;/heading&#93;</code>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis.</p>[/one_half_last]
+[hr]
+[one_half]
+[heading h="1"]This is an h1 tag This is an h1 tag This is an h1 tag This is an h1 tag[/heading]
+<h2>This is an h2 tag This is an h2 tag This is an h2 tag This is an h2 tag This is an h2 tag This is an h2 tag</h2>
+<h3>This is an h3 tag This is an h3 tag This is an h3 tag This is an h3 tag This is an h3 tag This is an h3 tag This is an h3 tag</h3>[/one_half]
+[one_half_last]<h4>This is an h4 tag This is an h4 tag This is an h4 tag This is an h4 tag This is an h4 tag This is an h4 tag This is an h4 tag</h4>
+<h5>This is an h5 tag This is an h5 tag This is an h5 tag This is an h5 tag This is an h5 tag This is an h5 tag This is an h5 tag</h5>
+<h6>This is an h6 tag This is an h6 tag This is an h6 tag This is an h6 tag This is an h6 tag This is an h6 tag This is an h6 tag</h6>[/one_half_last]
+[hr]
+<h2>Sub Titles</h2>
+<p>Add a sub-heading to any H1-H6 tag using <code>&lt;span&gt;</code> tag, or use the following shortcode:</p>
+
+<div style="margin-left:30px;">
+[heading h="1"]Heading Text [sub_title]This is a sub-heading[/sub_title][/heading]</div>
+<pre class="code">&#91;heading&#93;
+	Heading Text
+	&#91sub_title&#93;This is a sub-heading&#91/sub_title&#93;
+&#91;/heading&#93;</pre>
+<p>or:</p>
+<p><code>&lt;h1&gt;Heading Text&lt;span&gt;This is a sub-heading&lt;/span&gt;&lt;/h1&gt;</code></p>
+
+[topdivider]
+
+[callout]TODO:CALLOUT[/callout]
+
+[topdivider]
+<a id="listsStyles"></a>
+[heading h="2"]Numbered lists, and fancy bulleted lists[/heading]
+The following styles for bulleted lists are available. To use, surround your list with the appropriate shortcode.
+<small>
+[one_third]
+<ul id="ul">
+  <li>This is an unordered list (default style)</li>
+  <li>List item
+    <ul>
+      <li>Sub-level 1
+        <ul>
+          <li>Sub-level 2</li>
+        </ul>
+      </li>
+			<li>Sub-level 1</li>
+		</ul>
+	</li>
+	<li>List item</li>
+</ul>
+[/one_third]
+[one_third]
+<ol id="ol">
+	<li>This is an ordered list</li>
+	<li>List item
+		<ol>
+			<li>Sub-level 1
+				<ol>
+					<li>Sub-level 2</li>
+				</ol>
+			</li>
+			<li>Sub-level 1</li>
+		</ol>
+	</li>
+	<li>List item</li>
+</ol>
+[/one_third]
+[one_third_last]
+<ol class="number-pad">
+	<li>This is a styled ordered list</li>
+	<li>Use <code>&lt;ul class="number-pad"&gt;</code>
+		<ol>
+			<li>Sub-level 1
+				<ol>
+					<li>Sub-level 2</li>
+				</ol>
+			</li>
+			<li>Sub-level 1</li>
+		</ol>
+	</li>
+	<li>List item</li>
+</ol>
+[/one_third_last]
+
+[one_third]
+[check_list]<ul id="checklists">
+  <li>Put your &lt;ul&gt;&lt;/ul&gt;</li>
+  <li>between <code>&#91;check_list&#93;</code></li>
+  <li>and <code>&#91;/check_list&#93;</code></li>
+</ul>[/check_list]
+[/one_third]
+[one_third]
+[arrow_list]<ul id="arrowlists">
+   <li>Put your &lt;ul&gt;&lt;/ul&gt;</li>
+  <li>between <code>&#91;arrow_list&#93;</code></li>
+  <li>and <code>&#91;/arrow_list&#93;</code></li>
+</ul>[/arrow_list]
+[/one_third]
+[one_third_last]
+[bullet_list color=error]<ul>
+  <li>Put your &lt;ul&gt;&lt;/ul&gt;</li>
+  <li>between <code>&#91;bullet_list color=error&#93;</code></li>
+  <li>and <code>&#91;/bullet_list&#93;</code></li>
+</ul>[/bullet_list]
+[/one_third_last]
+
+[one_third]
+[bullet_list]<ul>
+  <li>Default/<strong>bullet_black</strong>: Put your &lt;ul&gt;&lt;/ul&gt;</li>
+  <li>between <code>&#91;bullet_list&#93;</code></li>
+  <li>and <code>&#91;/bullet_list&#93;</code></li>
+</ul>[/bullet_list]
+[/one_third]
+[one_third]
+[bullet_list color=gray]<ul>
+  <li>Put your &lt;ul&gt;&lt;/ul&gt;</li>
+  <li>between <code>&#91;bullet_list color=gray&#93;</code></li>
+  <li>and <code>&#91;/bullet_list&#93;</code></li>
+</ul>[/bullet_list]
+[/one_third]
+[one_third_last]
+[bullet_list color=silver]<ul>
+   <li>Put your &lt;ul&gt;&lt;/ul&gt;</li>
+  <li>between <code>&#91;bullet_list color=silver&#93;</code></li>
+  <li>and <code>&#91;/bullet_list&#93;</code></li>
+</ul>[/bullet_list]
+[/one_third_last]
+
+[one_third]
+[bullet_list color=red]<ul>
+   <li>Put your &lt;ul&gt;&lt;/ul&gt;</li>
+  <li>between <code>&#91;bullet_list color=red&#93;</code></li>
+  <li>and <code>&#91;/bullet_list&#93;</code></li>
+</ul>[/bullet_list]
+[/one_third]
+[one_third]
+[bullet_list color=orange]<ul>
+   <li>Put your &lt;ul&gt;&lt;/ul&gt;</li>
+  <li>between <code>&#91;bullet_list color=orange&#93;</code></li>
+  <li>and <code>&#91;/bullet_list&#93;</code></li>
+</ul>[/bullet_list]
+[/one_third]
+[one_third_last]
+[bullet_list color=yellow]<ul>
+  <li>Put your &lt;ul&gt;&lt;/ul&gt;</li>
+  <li>between <code>&#91;bullet_list color=yellow&#93;</code></li>
+  <li>and <code>&#91;/bullet_list&#93;</code></li>
+</ul>[/bullet_list]
+[/one_third_last]
+
+[one_third]
+[bullet_list color=green]<ul>
+  <li>Put your &lt;ul&gt;&lt;/ul&gt;</li>
+  <li>between <code>&#91;bullet_list color=green&#93;</code></li>
+  <li>and <code>&#91;/bullet_list&#93;</code></li>
+</ul>[/bullet_list]
+[/one_third]
+[one_third]
+[bullet_list color=pink]<ul>
+  <li>Put your &lt;ul&gt;&lt;/ul&gt;</li>
+  <li>between <code>&#91;bullet_list color=pink&#93;</code></li>
+  <li>and <code>&#91;/bullet_list&#93;</code></li>
+</ul>[/bullet_list]
+[/one_third]
+[one_third_last]
+[bullet_list color=purple]<ul>
+   <li>Put your &lt;ul&gt;&lt;/ul&gt;</li>
+  <li>between <code>&#91;bullet_list color=purple&#93;</code></li>
+  <li>and <code>&#91;/bullet_list&#93;</code></li>
+</ul>[/bullet_list]
+[/one_third_last]
+
+[one_third]
+[bullet_list color=blue]<ul>
+  <li>Put your &lt;ul&gt;&lt;/ul&gt;</li>
+  <li>between <code>&#91;bullet_list color=blue&#93;</code></li>
+  <li>and <code>&#91;/bullet_list&#93;</code></li>
+</ul>[/bullet_list]
+[/one_third]
+[one_third]
+[bullet_list color=toggle_plus]<ul>
+  <li>Put your &lt;ul&gt;&lt;/ul&gt;</li>
+  <li>between <code>&#91;bullet_list color=toggle_plus&#93;</code></li>
+  <li>and <code>&#91;/bullet_list&#93;</code></li>
+</ul>[/bullet_list]
+[/one_third]
+[one_third_last]
+[bullet_list color=toggle_minus]<ul>
+   <li>Put your &lt;ul&gt;&lt;/ul&gt;</li>
+  <li>between <code>&#91;bullet_list color=toggle_minus&#93;</code></li>
+  <li>and <code>&#91;/bullet_list&#93;</code></li>
+</ul>[/bullet_list]
+[/one_third_last]
+
+[one_third]
+[bullet_list color=wrench]<ul>
+  <li>Put your &lt;ul&gt;&lt;/ul&gt;</li>
+  <li>between <code>&#91;bullet_list color=wrench&#93;</code></li>
+  <li>and <code>&#91;/bullet_list&#93;</code></li>
+</ul>[/bullet_list]
+[/one_third]
+[one_third]
+[bullet_list color=star]<ul>
+   <li>Put your &lt;ul&gt;&lt;/ul&gt;</li>
+  <li>between <code>&#91;bullet_list color=star&#93;</code></li>
+  <li>and <code>&#91;/bullet_list&#93;</code></li>
+</ul>[/bullet_list]
+[/one_third]
+[one_third_last]
+[bullet_list color=picture]<ul>
+  <li>Put your &lt;ul&gt;&lt;/ul&gt;</li>
+  <li>between <code>&#91;bullet_list color=picture&#93;</code></li>
+  <li>and <code>&#91;/bullet_list&#93;</code></li>
+</ul>[/bullet_list]
+[/one_third_last]
+
+[one_third]
+[bullet_list color=add]<ul>
+  <li>Put your &lt;ul&gt;&lt;/ul&gt;</li>
+  <li>between <code>&#91;bullet_list color=add&#93;</code></li>
+  <li>and <code>&#91;/bullet_list&#93;</code></li>
+</ul>[/bullet_list]
+[/one_third]
+[one_third]
+[bullet_list color=delete]<ul>
+   <li>Put your &lt;ul&gt;&lt;/ul&gt;</li>
+  <li>between <code>&#91;bullet_list color=delete&#93;</code></li>
+  <li>and <code>&#91;/bullet_list&#93;</code></li>
+</ul>[/bullet_list]
+[/one_third]
+[one_third_last]
+[bullet_list color=key]<ul>
+   <li>Put your &lt;ul&gt;&lt;/ul&gt;</li>
+  <li>between <code>&#91;bullet_list color=key&#93;</code></li>
+  <li>and <code>&#91;/bullet_list&#93;</code></li>
+</ul>[/bullet_list]
+[/one_third_last]
+</small>
+
+<a id="blockquotes"></a>
+[heading h="2"]Blockquotes[/heading]
+<p>Vel velit rhoncus penatibus tempor urna rhoncus rhoncus etiam! Cum urna, nunc vel non dis penatibus nascetur? Ac placerat. Ultricies mus tortor adipiscing, odio hac! Porttitor quis elementum porta, adipiscing ac integer duis velit vel, sit porttitor elit turpis! Sit tempor. Tortor lectus pid enim? Pulvinar placerat hac et arcu amet scelerisque velit, lundium penatibus?</p>
+<blockquote><strong>This is a blockquote.</strong> Nisi aliquet! Pid, nunc, integer et nec! Turpis. Auctor duis eros, elit arcu ridiculus et proin a, dignissim tincidunt et placerat mattis rhoncus? Risus, magna etiam, porta magna montes! Lundium, elit integer. Lundium risus, dapibus ut, placerat duis parturient pid in et urna est. Facilisis augue enim adipiscing et sit sed tristique odio dolor sit.<cite>-- by Elmer Fudd. Use the <code>&lt;cite&gt;</code> tag</cite></blockquote>
+<p>Vel velit rhoncus penatibus tempor urna rhoncus rhoncus etiam! Cum urna, nunc vel non dis penatibus nascetur? Ac placerat. Ultricies mus tortor adipiscing, odio hac! Porttitor quis elementum porta, adipiscing ac integer duis velit vel, sit porttitor elit turpis! Sit tempor. Tortor lectus pid enim? Pulvinar placerat hac et arcu amet scelerisque velit, lundium penatibus?</p>
+
+[topdivider]
+<a id="divider"></a>
+[heading h="2"]Dividers and Spacers[/heading]
+<p>Sometimes you might need some spacing but don't want to change the CSS because it's just a once-off. And you might not want empty paragraph tags or brs all over the place. Use <span class="typography_example">shortcode <code>&#91;spacer&#93;</code></span> to create a 10px high blank spacer. You can use multiples or you can use <code>&#91;spacer height="50"&#93;</code> to create a 50px high spacer. <strong>Substitute any pixel value</strong> for a custom height. For example, the gap below was created with height="100"</p>
+[spacer height=100]
+<p>Below is a top-link divider. It has a link to the top of the page. Use <span class="typography_example">shortcode <code>&#91;topdivider&#93;</code></span>. Vel velit rhoncus penatibus tempor urna rhoncus rhoncus etiam! Cum urna, nunc vel non dis penatibus nascetur? Ac placerat.</p>
+[topdivider]
+<p>Below is a horizontal rule/line. Use <span class="typography_example">shortcode <code>&#91;hr&#93;</code></span>. Vel velit rhoncus penatibus tempor urna rhoncus rhoncus etiam! Cum urna, nunc vel non dis penatibus nascetur? Ac placerat.</p>
+[hr]
+[hr style="dotted"]
+[hr style="dashed"]
+<h6>Parameters</h6>
+<ul>
+<li><strong>style</strong>: dashed, dotted, solid (default if left out)</li>
+<li>You can also use your own classname: style="myCustomClassName" and add your own CSS. <code>dotted</code>, <code>dashed</code> and the default <code>solid</code> are pre-styled in our CSS file.</li>
+</ul>
+
+
+[topdivider]
+<a id="dropcaps"></a>
+[heading h="2"]Drop Caps[/heading]
+<p>[dropcap]T[/dropcap]his is a dropcap. Use <code>&#91;dropcap&#93;L&#91;/dropcap&#93;</code>. Consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus.  Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. </p>
+
+[topdivider]
+<a id="tables"></a>
+[heading h="2"]Tables[/heading]
+<h3>A regular, unstyled table</h2>
+<table>
+<tbody>
+<tr>
+<th>Header 1</th>
+<th>Header 2</th>
+<th>Header 3</th>
+<th>Header 4</th>
+<th>Header 5</th>
+</tr>
+<tr>
+<td>Division 1</td>
+<td>Division 2</td>
+<td>Division 3</td>
+<td>Division 4</td>
+<td>Division 5</td>
+</tr>
+<tr class="even">
+<td>Division 1</td>
+<td>Division 2</td>
+<td>Division 3</td>
+<td>Division 4</td>
+<td>Division 5</td>
+</tr>
+<tr>
+<td>Division 1</td>
+<td>Division 2</td>
+<td>Division 3</td>
+<td>Division 4</td>
+<td>Division 5</td>
+</tr>
+</tbody>
+</table>
+
+<h3>Table with width=100%</h3>
+<table width="100%">
+<tbody>
+<tr>
+<th>Header 1</th>
+<th>Header 2</th>
+<th>Header 3</th>
+<th>Header 4</th>
+<th>Header 5</th>
+</tr>
+<tr>
+<td>Division 1</td>
+<td>Division 2</td>
+<td>Division 3</td>
+<td>Division 4</td>
+<td>Division 5</td>
+</tr>
+<tr class="even">
+<td>Division 1</td>
+<td>Division 2</td>
+<td>Division 3</td>
+<td>Division 4</td>
+<td>Division 5</td>
+</tr>
+<tr>
+<td>Division 1</td>
+<td>Division 2</td>
+<td>Division 3</td>
+<td>Division 4</td>
+<td>Division 5</td>
+</tr>
+</tbody>
+</table>
+
+[topdivider]
+<a id="alertboxes"></a>
+[heading h="2"]Alert Boxes[/heading]
+
+[heading h=3]Arrow Boxes[/heading]
+[one_third]
+	[arrow_right_box]
+		<h6 style="margin: 0">Arrow Right Box</h6>
+	    Insert text here
+	[/arrow_right_box]
+	<pre>[ arrow_right_box ]
+  Insert text here
+[ /arrow_right_box ]</pre>
+[/one_third]
+[one_third]
+	[arrow_left_box]
+		<h6 style="margin: 0">Arrow Left Box</h6>
+	    Insert text here
+	[/arrow_left_box]
+	<pre>[ arrow_left_box ]
+  Insert text here
+[ /arrow_left_box ]</pre>
+[/one_third]
+[one_third_last]
+	[arrow_up_box]
+		<h6 style="margin: 0">Arrow Up Box</h6>
+	    Insert text here
+	[/arrow_up_box]
+	<pre>[ arrow_up_box ]
+  Insert text here
+[ /arrow_up_box ]</pre>
+[/one_third_last]
+[one_third]
+	[arrow_down_box]
+		<h6 style="margin: 0">Arrow Down Box</h6>
+	    Insert text here
+	[/arrow_down_box]
+	<pre>[ arrow_down_box ]
+  Insert text here
+[ /arrow_down_box ]</pre>
+[/one_third]
+[one_third]
+	[bluearrow_right_box]
+		<h6 style="margin: 0">Blue Arrow Right Box</h6>
+	    Insert text here
+	[/bluearrow_right_box]
+	<pre>[ bluearrow_right_box ]
+  Insert text here
+[ /bluearrow_right_box ]</pre>
+[/one_third]
+[one_third_last]
+	[bluearrow_left_box]
+		<h6 style="margin: 0">Blue Arrow Left Box</h6>
+	    Insert text here
+	[/bluearrow_left_box]
+	<pre>[ bluearrow_left_box ]
+  Insert text here
+[ /bluearrow_left_box ]</pre>
+[/one_third_last]
+
+[one_third]
+	[bluearrow_up_box]
+		<h6 style="margin: 0">Blue Arrow Up Box</h6>
+	    Insert text here
+	[/bluearrow_up_box]
+	<pre>[ bluearrow_up_box ]
+  Insert text here
+[ /bluearrow_up_box ]</pre>
+[/one_third]
+[one_third]
+	[bluearrow_down_box]
+		<h6 style="margin: 0">Blue Arrow Down Box</h6>
+	    Insert text here
+	[/bluearrow_down_box]
+	<pre>[ bluearrow_down_box ]
+  Insert text here
+[ /bluearrow_down_box ]</pre>
+[/one_third]
+[one_third_last]
+ 
+[/one_third_last]
+
+[topdivider]
+[heading h=3]Search Boxes[/heading]
+[one_third]
+	[search_box]
+		<h6 style="margin: 0">Search Box</h6>
+	    Insert text here
+	[/search_box]
+	<pre>[ search_box ]
+  Insert text here
+[ /search_box ]</pre>
+[/one_third]
+[one_third]
+	[search_blue_box]
+		<h6 style="margin: 0">Search - Blue Box</h6>
+	    Insert text here
+	[/search_blue_box]
+	<pre>[ search_blue_box ]
+  Insert text here
+[ /search_blue_box ]</pre>
+[/one_third]
+[one_third_last]
+	[search_green_box]
+		<h6 style="margin: 0">Search - Green Box</h6>
+	    Insert text here
+	[/search_green_box]
+	<pre>[ search_green_box ]
+  Insert text here
+[ /search_green_box ]</pre>
+[/one_third_last]
+
+[topdivider]
+[heading h=3]Other boxes[/heading]
+[one_third]
+	[basket_box]
+		<h6 style="margin: 0">Basket/Cart Box</h6>
+	    Insert text here
+	[/basket_box]
+	<pre>[ basket_box ]
+  Insert text here
+[ /basket_box ]</pre>
+[/one_third]
+[one_third]
+	[book_box]
+		<h6 style="margin: 0">Book Box</h6>
+	    Insert text here
+	[/book_box]
+	<pre>[ book_box ]
+  Insert text here
+[ /book_box ]</pre>
+[/one_third]
+[one_third_last]
+	[calendar_box]
+		<h6 style="margin: 0">Calendar/Time Box</h6>
+	    Insert text here
+	[/calendar_box]
+	<pre>[ calendar_box ]
+  Insert text here
+[ /calendar_box ]</pre>
+[/one_third_last]
+
+[one_third]
+	[camera_box]
+		<h6 style="margin: 0">Camera Box</h6>
+	    Insert text here
+	[/camera_box]
+	<pre>[ camera_box ]
+  Insert text here
+[ /camera_box ]</pre>
+[/one_third]
+[one_third]
+	[chart_box]
+		<h6 style="margin: 0">Chart Box</h6>
+	    Insert text here
+	[/chart_box]
+	<pre>[ chart_box ]
+  Insert text here
+[ /chart_box ]</pre>
+[/one_third]
+[one_third_last]
+	[check_box]
+		<h6 style="margin: 0">Check/Success Box</h6>
+	    Insert text here
+	[/check_box]
+	<pre>[ check_box ]
+  Insert text here
+[ /check_box ]</pre>
+[/one_third_last]
+
+[one_third]
+	[comment_box]
+		<h6 style="margin: 0">Comment Box</h6>
+	    Insert text here
+	[/comment_box]
+	<pre>[ comment_box ]
+  Insert text here
+[ /comment_box ]</pre>
+[/one_third]
+[one_third]
+	[contact_box]
+		<h6 style="margin: 0">Contact Box</h6>
+	    Insert text here
+	[/contact_box]
+	<pre>[ contact_box ]
+  Insert text here
+[ /contact_box ]</pre>
+[/one_third]
+[one_third_last]
+	[download_box]
+		<h6 style="margin: 0">Download Box</h6>
+	    Insert text here
+	[/download_box]
+	<pre>[ download_box ]
+  Insert text here
+[ /download_box ]</pre>
+[/one_third_last]
+
+[one_third]
+	[error_box]
+		<h6 style="margin: 0">Error Box</h6>
+	    Insert text here
+	[/error_box]
+	<pre>[ error_box ]
+  Insert text here
+[ /error_box ]</pre>
+[/one_third]
+[one_third]
+	[fancy_box]
+		<h6 style="margin: 0">Fancy Box</h6>
+	    Insert text here
+	[/fancy_box]
+	<pre>[ fancy_box ]
+  Insert text here
+[ /fancy_box ]</pre>
+[/one_third]
+[one_third_last]
+	[folder_box]
+		<h6 style="margin: 0">Folder Box</h6>
+	    Insert text here
+	[/folder_box]
+	<pre>[ folder_box ]
+  Insert text here
+[ /folder_box ]</pre>
+[/one_third_last]
+
+[one_third]
+	[hammer_box]
+		<h6 style="margin: 0">Hammer Box</h6>
+	    Insert text here
+	[/hammer_box]
+	<pre>[ hammer_box ]
+  Insert text here
+[ /hammer_box ]</pre>
+[/one_third]
+[one_third]
+	[tool_box]
+		<h6 style="margin: 0">Tool Box</h6>
+	    Insert text here
+	[/tool_box]
+	<pre>[ tool_box ]
+  Insert text here
+[ /tool_box ]</pre>
+[/one_third]
+[one_third_last]
+	[screwdriver_box]
+		<h6 style="margin: 0">Screw Driver Box</h6>
+	    Insert text here
+	[/screwdriver_box]
+	<pre>[ screwdriver_box ]
+  Insert text here
+[ /screwdriver_box ]</pre>
+[/one_third_last]
+
+[one_third]
+	[heart_box]
+		<h6 style="margin: 0">Heart Box</h6>
+	    Insert text here
+	[/heart_box]
+	<pre>[ heart_box ]
+  Insert text here
+[ /heart_box ]</pre>
+[/one_third]
+[one_third]
+	[home_box]
+		<h6 style="margin: 0">Home Box</h6>
+	    Insert text here
+	[/home_box]
+	<pre>[ home_box ]
+  Insert text here
+[ /home_box ]</pre>
+[/one_third]
+[one_third_last]
+	[info_box]
+		<h6 style="margin: 0">Info Box</h6>
+	    Insert text here
+	[/info_box]
+	<pre>[ info_box ]
+  Insert text here
+[ /info_box ]</pre>
+[/one_third_last]
+
+[one_third]
+	[lightbulb_on_box]
+		<h6 style="margin: 0">Lightbulb On Box</h6>
+	    Insert text here
+	[/lightbulb_on_box]
+	<pre>[ lightbulb_on_box ]
+  Insert text here
+[ /lightbulb_on_box ]</pre>
+[/one_third]
+[one_third]
+	[lightbulb_off_box]
+		<h6 style="margin: 0">Lightbulb Off Box</h6>
+	    Insert text here
+	[/lightbulb_off_box]
+	<pre>[ lightbulb_off_box ]
+  Insert text here
+[ /lightbulb_off_box ]</pre>
+[/one_third]
+[one_third_last]
+	[news_box]
+		<h6 style="margin: 0">News Box</h6>
+	    Insert text here
+	[/news_box]
+	<pre>[ news_box ]
+  Insert text here
+[ /news_box ]</pre>
+[/one_third_last]
+
+[one_third]
+	[save_box]
+		<h6 style="margin: 0">Save Box</h6>
+	    Insert text here
+	[/save_box]
+	<pre>[ save_box ]
+  Insert text here
+[ /save_box ]</pre>
+[/one_third]
+[one_third]
+	[note_box]
+		<h6 style="margin: 0">Note Box</h6>
+	    Insert text here
+	[/note_box]
+	<pre>[ note_box ]
+  Insert text here
+[ /note_box ]</pre>
+[/one_third]
+[one_third_last]
+	[plus_box]
+		<h6 style="margin: 0">Plus Box</h6>
+	    Insert text here
+	[/plus_box]
+	<pre>[ plus_box ]
+  Insert text here
+[ /plus_box ]</pre>
+[/one_third_last]
+
+[one_third]
+	[screen_on_box]
+		<h6 style="margin: 0">Screen On Box</h6>
+	    Insert text here
+	[/screen_on_box]
+	<pre>[ screen_on_box ]
+  Insert text here
+[ /screen_on_box ]</pre>
+[/one_third]
+[one_third]
+	[screen_off_box]
+		<h6 style="margin: 0">Screen Off Box</h6>
+	    Insert text here
+	[/screen_off_box]
+	<pre>[ screen_off_box ]
+  Insert text here
+[ /screen_off_box ]</pre>
+[/one_third]
+[one_third_last]
+	[star_box]
+		<h6 style="margin: 0">Star Box</h6>
+	    Insert text here
+	[/star_box]
+	<pre>[ star_box ]
+  Insert text here
+[ /star_box ]</pre>
+[/one_third_last]
+
+[one_third]
+	[twitter_box]
+		<h6 style="margin: 0">Twitter Box</h6>
+	    Insert text here
+	[/twitter_box]
+	<pre>[ twitter_box ]
+  Insert text here
+[ /twitter_box ]</pre>
+[/one_third]
+[one_third]
+	[warning_box]
+		<h6 style="margin: 0">Warning Box</h6>
+	    Insert text here
+	[/warning_box]
+	<pre>[ warning_box ]
+  Insert text here
+[ /warning_box ]</pre>
+[/one_third]
+[one_third_last]
+	[address_box]
+		<h6 style="margin: 0">Address Box</h6>
+	    Insert text here
+	[/address_box]
+	<pre>[ address_box ]
+  Insert text here
+[ /address_box ]</pre>
+[/one_third_last]
+
+[topdivider]
+[heading h=3]User boxes[/heading]
+[one_third]
+	[user_black_box]
+		<h6 style="margin: 0">User (Black) Box</h6>
+	    Insert text here
+	[/user_black_box]
+	<pre>[ user_black_box ]
+  Insert text here
+[ /user_black_box ]</pre>
+[/one_third]
+[one_third]
+	[user_blue_box]
+		<h6 style="margin: 0">User (Blue) Box</h6>
+	    Insert text here
+	[/user_blue_box]
+	<pre>[ user_blue_box ]
+  Insert text here
+[ /user_blue_box ]</pre>
+[/one_third]
+[one_third_last]
+	[user_business_box]
+		<h6 style="margin: 0">User (Business) Box</h6>
+	    Insert text here
+	[/user_business_box]
+	<pre>[ user_business_box ]
+  Insert text here
+[ /user_business_box ]</pre>
+[/one_third_last]
+
+[one_third]
+	[users_box]
+		<h6 style="margin: 0">Multiple Users Box</h6>
+	    Insert text here
+	[/users_box]
+	<pre>[ users_box ]
+  Insert text here
+[ /users_box ]</pre>
+[/one_third]
+[one_third]
+	[users_business_box]
+		<h6 style="margin: 0">Multiple Business Users Box</h6>
+	    Insert text here
+	[/users_business_box]
+	<pre>[ users_business_box ]
+  Insert text here
+[ /users_business_box ]</pre>
+[/one_third]
+[one_third_last]
+
+[/one_third_last]
+
+
+[topdivider]
+<a id="columns"></a>
+[heading h="2"]Columns[/heading]
+[fancy_box]You can use any combination of <strong class="red"><code>one_half</code></strong>, <strong class="red"><code>one_third</code></strong>, <strong class="red"><code>two_thirds</code></strong>, <strong class="red"><code>one_quarter</code></strong>, <strong class="red"><code>three_quarters</code></strong>, <strong class="red"><code>one_fifth</code></strong>, and <strong class="red"><code>four_fifths</code></strong> that adds up to <strong>one</strong>. Just remember to use <strong class="red"><code>_last</code></strong> in the last column, as demonstrated below.[/fancy_box]
+[spacer]
+[one_half][dropcap]1[/dropcap] This is a <em><strong>"one half"</strong></em> column. Use <code>&#91;one_half&#93; your text &#91;/one_half&#93;</code>. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra. Sed consectetur sapien in sem suscipit vitae varius tellus tempor. Morbi ac eros dolor, in accumsan enim. Donec volut. 
+
+Curabitur quis nisl justo, vel consequat lorem. Fusce fringilla lacus at felis vestibulum mollis. Suspendisse potenti.[/one_half]
+[one_half_last][dropcap]2[/dropcap] This is the <em><strong>last "one half" column</strong></em>. Use <code>&#91; one_half_last &#93;your text&#91;/one_half_last&#93;</code>. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed consectetur sapien in sem suscipit vitae varius tellus tempor. Morbi ac eros dolor, in accumsan enim. Donec volut. 
+
+Curabitur quis nisl justo, vel consequat lorem. Fusce fringilla lacus at felis vestibulum mollis. Suspendisse potenti.[/one_half_last]
+
+[spacer height="60"]
+
+[one_third][dropcap]1[/dropcap] This is a <strong><em>"one third" column</em></strong>. Use <code>&#91;one_third&#93;your text&#91;/one_third&#93;</code>. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur quis nisl justo, vel consequat lorem. Fusce fringilla lacus at felis vestibulum mollis. Suspendisse potenti.[/one_third]
+[one_third][dropcap]2[/dropcap] This is a <strong><em>"one third" column</em></strong>. Use <code>&#91;one_third&#93;your text&#91;/one_third&#93;</code>. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur quis nisl justo, vel consequat lorem. Fusce fringilla lacus at felis vestibulum mollis. Suspendisse potenti.[/one_third]
+[one_third_last][dropcap]3[/dropcap] This is the <strong><em>last "one third" column</em></strong>. Use <code>&#91;one_third_last&#93;your text&#91;/one_third_last&#93;</code>. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur quis nisl justo, vel consequat lorem. Fusce fringilla lacus at felis vestibulum mollis. Suspendisse potenti.[/one_third_last]
+
+[spacer height="60"]
+
+[one_third][dropcap]1[/dropcap] This is a <strong><em>"one third" column</em></strong>. Use <code>&#91;one_third&#93;your text&#91;/one_third&#93;</code>. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  In consequat felis at nibh scelerisque rutrum. Vivamus in risus dolor, consectetur sodales nisl. In venenatis tempus ultrices. Vivamus non est id sem fermentum imperdiet aliquam id urna.[/one_third]
+[two_thirds_last][dropcap]2[/dropcap] This is a last <strong><em>"two thirds" column</em></strong>. Use <code>&#91;two_thirds_last&#93;your text&#91;/two_thirds_last&#93;</code>. Mauris non dolor velit tempor sed nibh. Aenean bibendum ullamcorper interdum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam turpis erat, accumsan ut iaculis nec, tempor sed nibh. 
+
+In consequat felis at nibh scelerisque rutrum. Vivamus in risus dolor, consectetur sodales nisl. In venenatis tempus ultrices. Vivamus non est id sem fermentum imperdiet aliquam id urna.[/two_thirds_last]
+
+[spacer height="60"]
+
+[two_thirds][dropcap]1[/dropcap] This is a <strong><em>"two thirds" column</em></strong>. Use <code>&#91;two_thirds&#93;your text&#91;/two_thirds&#93;</code>. LoMauris non dolor velit tempor sed nibh. Aenean bibendum ullamcorper interdum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam turpis erat, accumsan ut iaculis nec, tempor sed nibh. 
+
+In consequat felis at nibh scelerisque rutrum. Vivamus in risus dolor, consectetur sodales nisl. In venenatis tempus ultrices. Vivamus non est id sem fermentum imperdiet aliquam id urna. [/two_thirds]
+[one_third_last][dropcap]2[/dropcap] This is the <strong><em>last "one third" column</em></strong>. Use <code>&#91;one_third_last&#93;your text&#91;/one_third_last&#93;</code>. Lorem ipsum dolor sit amet, consectetuer adipiscing dolor sit elit.
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing dolor sit elit.[/one_third_last]
+
+[spacer height="60"]
+
+[one_quarter][dropcap]1[/dropcap] This is a <strong><em>"one quarter" column</em></strong>. Use <code>&#91;one_quarter&#93; your text &#91;/one_quarter&#93;</code>. Lorem ipsum dolor sit amet, adipiscing elit commodo.[/one_quarter]
+[one_quarter][dropcap]2[/dropcap] This is a <strong><em>"one quarter" column</em></strong>. Use <code>&#91;one_quarter&#93; your text &#91;/one_quarter&#93;</code>. Lorem ipsum dolor sit amet, adipiscing elit commodo.[/one_quarter]
+[one_quarter][dropcap]3[/dropcap] This is a <strong><em>"one quarter" column</em></strong>. Use <code>&#91;one_quarter&#93; your text &#91;/one_quarter&#93;</code>. Lorem ipsum dolor sit amet, adipiscing elit commodo.[/one_quarter]
+[one_quarter_last][dropcap]4[/dropcap] This is the <strong><em>last "one quarter" column</em></strong>. Use <code>&#91;one_quarter_last&#93; your text &#91;/one_quarter_last&#93;</code>. Lorem ipsum dolor amet adipiscing.[/one_quarter_last]
+
+[spacer height="30"]
+
+[three_quarters][dropcap]1[/dropcap] This is a <strong><em>"three quarters" column</em></strong>. Use <code>&#91;three_quarters&#93; your text &#91;/three_quarters&#93;</code>. Lorem ipsum dolor sit amet, adipiscing elit commodo.
+
+Phasellus eget justo purus, et porttitor massa. Duis tristique dui nec ligula iaculis ut blandit metus cursus. Nullam at sodales libero. Vivamus quam elit, feugiat a luctus sed, mattis nec nulla. Mauris sed tellus velit.
+[/three_quarters]
+[one_quarter_last][dropcap]2[/dropcap] This is the <strong><em>last "one quarter" column</em></strong>. Use <code>&#91;one_quarter_last&#93; your text &#91;/one_quarter_last&#93;</code>. Lorem ipsum dolor amet adipiscing.[/one_quarter_last]
+
+[spacer height="30"]
+
+[one_quarter][dropcap]1[/dropcap] This is a <strong><em>"one quarter" column</em></strong>. Use <code>&#91;one_quarter&#93; your text &#91;/one_quarter&#93;</code>. Lorem ipsum dolor sit amet, adipiscing elit commodo.[/one_quarter]
+[three_quarters_last][dropcap]2[/dropcap] This is the <strong><em>last "three quarters" column</em></strong>. Use <code>&#91;three_quarters_last&#93; your text &#91;/three_quarters_last&#93;</code>. Lorem ipsum dolor amet adipiscing. 
+
+Phasellus eget justo purus, et porttitor massa. Duis tristique dui nec ligula iaculis ut blandit metus cursus. Nullam at sodales libero. Vivamus quam elit, feugiat a luctus sed, mattis nec nulla. Mauris sed tellus velit.
+[/three_quarters_last]
+
+[spacer height="30"]
+
+[one_fifth][dropcap]1[/dropcap] This is a <strong><em>"one fifth" column</em></strong>. Use <code>&#91;one_fifth&#93; your text &#91;/one_fifth&#93;</code>. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.[/one_fifth]
+[one_fifth][dropcap]2[/dropcap] This is a <strong><em>"one fifth" column</em></strong>. Use <code>&#91;one_fifth&#93; your text &#91;/one_fifth&#93;</code>. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.[/one_fifth]
+[one_fifth][dropcap]3[/dropcap] This is a <strong><em>"one fifth" column</em></strong>. Use <code>&#91;one_fifth&#93; your text &#91;/one_fifth&#93;</code>. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.[/one_fifth]
+[one_fifth][dropcap]4[/dropcap] This is a <strong><em>"one fifth" column</em></strong>. Use <code>&#91;one_fifth&#93; your text &#91;/one_fifth&#93;</code>. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.[/one_fifth]
+[one_fifth_last][dropcap]5[/dropcap] This is the <strong><em>last "one fifth" column</em></strong>. Use <code>&#91;one_quarter_last&#93; your text &#91;/one_quarter_last&#93;</code>. Lorem ipsum dolor sit amet.[/one_fifth_last]
+
+[spacer height="30"]
+
+[one_fifth][dropcap]1[/dropcap] This is a <strong><em>"one fifth" column</em></strong>. Use <code>&#91;one_fifth&#93; your text &#91;/one_fifth&#93;</code>. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.[/one_fifth]
+[four_fifths_last][dropcap]2[/dropcap] This is the <strong><em>last "four fifths" column</em></strong>. Use <code>&#91;four_fifths_last&#93; your text &#91;/four_fifths_last&#93;</code>. Lorem ipsum dolor sit amet. Fusce pellentesque eros lacus. Aliquam turpis erat, accumsan ut iaculis nec, tempor sed nibh. Mauris non dolor velit. Aenean bibendum ullamcorper interdum. Aliquam sit amet lectus sem. Nunc eget orci orci, at elementum nisl. 
+
+Cras cursus, arcu quis elementum porta, tortor nisi lobortis est, ac eleifend orci magna id eros. Donec laoreet libero a leo ultricies vitae commodo quam ullamcorper.[/four_fifths_last]
+
+[spacer height="30"]
+
+[four_fifths][dropcap]1[/dropcap] This is a <strong><em>"four fifths" column</em></strong>. Use <code>&#91;four_fifths&#93; your text &#91;/four_fifths&#93;</code>. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam sit amet lectus sem. Nunc eget orci orci, at elementum nisl.
+
+Cras cursus, arcu quis elementum porta, tortor nisi lobortis est, ac eleifend orci magna id eros. Donec laoreet libero a leo ultricies vitae commodo quam ullamcorper. Aliquam sit amet lectus sem. Nunc eget orci orci, at elementum nisl.
+[/four_fifths]
+[one_fifth_last][dropcap]2[/dropcap] This is the <strong><em>last "one fifth" column</em></strong>. Use <code>&#91;one_fifth_last&#93; your text &#91;/one_fifth_last&#93;</code>. Lorem ipsum dolor sit amet. [/one_fifth_last]
+
+[spacer height="30"]
+[one_half][dropcap]1[/dropcap] This is a <em><strong>"one half"</strong></em> column. Use <code>&#91;one_half&#93;your text&#91;/one_half&#93;</code>. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra. Nunc eget orci orci, at elementum nisl. Lorem ipsum dolor amet adipiscing. Aliquam sit amet lectus sem. Nunc eget orci orci, at elementum nisl.[/one_half]
+[one_quarter][dropcap]2[/dropcap] This is a <strong><em>"one quarter" column</em></strong>. Use <code>&#91;one_quarter&#93; your text &#91;/one_quarter&#93;</code>. Lorem ipsum dolor sit amet, adipiscing elit commodo.[/one_quarter]
+[one_quarter_last][dropcap]3[/dropcap] This is the <strong><em>last "one quarter" column</em></strong>. Use <code>&#91;one_quarter_last&#93; your text &#91;/one_quarter_last&#93;</code>. Lorem ipsum dolor amet adipiscing.[/one_quarter_last]
+
+[spacer height="30"]
+
+[fancy_box]You can use any combination of <strong class="red"><code>one_half</code></strong>, <strong class="red"><code>one_third</code></strong>, <strong class="red"><code>two_thirds</code></strong>, <strong class="red"><code>one_quarter</code></strong>, <strong class="red"><code>three_quarters</code></strong>, <strong class="red"><code>one_fifth</code></strong>, and <strong class="red"><code>four_fifths</code></strong> that adds up to <strong>one</strong>. Just remember to use <strong class="red"><code>_last</code></strong> in the last column, as demonstrated.[/fancy_box]
+[topdivider]

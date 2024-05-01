@@ -49,5 +49,30 @@ require_once dirname( __FILE__ ) . '/inc/shortcode-divider.php';
 require_once dirname( __FILE__ ) . '/inc/shortcode-dropcaps.php';
 require_once dirname( __FILE__ ) . '/inc/shortcode-hr.php';
 require_once dirname( __FILE__ ) . '/inc/shortcode-lists.php';
-require_once dirname( __FILE__ ) . '/inc/shortcode-permalinks.php';
+require_once dirname( __FILE__ ) . '/inc/shortcode-permalink.php';
 require_once dirname( __FILE__ ) . '/inc/shortcode-spacer.php';
+
+/**
+ *  move wpautop filter to AFTER shortcode is processed *
+ */
+remove_filter( 'the_content', 'wpautop' );
+add_filter( 'the_content', 'wpautop', 99 );
+add_filter( 'the_content', 'shortcode_unautop', 100 );
+
+/**
+ * Stop WP auto-inserting blank <p> tags in shortcodes and empty <p> tags in general
+ */
+function sbs_empty_paragraph_fix( $content ) {
+	$array   = array(
+		'<p><!--'       => '<!--',
+		'--></p>'       => '-->',
+		'<p><script>'   => '<script>',
+		'</script></p>' => '</script>',
+		'<p>['          => '[',
+		']</p>'         => ']',
+		']<br />'       => ']',
+	);
+	$content = strtr( $content, $array );
+	return $content;
+}
+add_filter( 'the_content', 'sbs_empty_paragraph_fix' );

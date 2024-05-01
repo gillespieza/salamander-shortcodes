@@ -35,10 +35,8 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 function sbs_styles_init() {
 	wp_register_style( 'sbs-style', plugins_url( '/salamander-shortcodes.css', __FILE__ ), false, '1.0' );
-	// wp_enqueue_style( 'sbs-style' );
 
 	// Register other scripts and styles.
-	wp_register_script( 'bootstrap-3', 'https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js', array( 'jquery' ), '3.4.1', true );
 	wp_register_style( 'bootstrap-3', 'https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css', array(), '3.4.1', 'all' );
 
 }
