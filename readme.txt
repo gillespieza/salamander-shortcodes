@@ -11,7 +11,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Theme-independent, Bootstrap 3-compatible shortcodes for permalinks, dividers, dropcaps, lists, multi-column layouts, alert boxes, and more.
 
 == Description ==
-NOTE: This plugin is mostly obsolete since the introduction of Gutenberg.
+NOTE: This plugin is mostly obsolete since the introduction of Gutenberg Blocks, but might still be useful if you are using the Classic Editor.
 
 = Acknowledgements =
 Icons were provided by:

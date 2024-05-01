@@ -17,7 +17,8 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @return string HTML markup for the divider.
  */
 function sbs_backtotop_divider() {
-	// Enqueue the stylesheet if needed.
+
+	// Enqueue the stylesheet. No need for the javascript.
 	wp_enqueue_style( 'sbs-style' );
 	wp_enqueue_style( 'bootstrap-3' );
 

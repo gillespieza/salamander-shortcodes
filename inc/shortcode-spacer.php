@@ -23,7 +23,8 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @return string HTML markup for the spacer.
  */
 function sbs_display_spacer( $atts, $content = null ) {
-	// Enqueue the stylesheet if needed.
+
+	// Enqueue the stylesheet. No need for the javascript.
 	wp_enqueue_style( 'sbs-style' );
 	wp_enqueue_style( 'bootstrap-3' );
 
@@ -39,9 +40,9 @@ function sbs_display_spacer( $atts, $content = null ) {
 
 	// Generate and return the spacer markup.
 	if ( $height > 0 ) {
-		return "<div class='spacer' style='height: {$height}px'></div>";
+		return "<div class='spacer clearfix' style='height: {$height}px'></div>";
 	} else {
-		return "<div class='spacer'></div>";
+		return "<div class='spacer clearfix'></div>";
 	}
 
 }

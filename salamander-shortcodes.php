@@ -42,6 +42,12 @@ add_action( 'plugins_loaded', 'sbs_plugin_init' );
 
 /** Load the plugin functions */
 require_once dirname( __FILE__ ) . '/inc/styles-scripts.php'; // loads the stylesheets and scripts.
-require_once dirname( __FILE__ ) . '/inc/shortcode-permalinks.php';
+require_once dirname( __FILE__ ) . '/inc/shortcode-alerts.php';
+require_once dirname( __FILE__ ) . '/inc/shortcode-callout.php';
+require_once dirname( __FILE__ ) . '/inc/shortcode-columns.php';
 require_once dirname( __FILE__ ) . '/inc/shortcode-divider.php';
+require_once dirname( __FILE__ ) . '/inc/shortcode-dropcaps.php';
+require_once dirname( __FILE__ ) . '/inc/shortcode-hr.php';
+require_once dirname( __FILE__ ) . '/inc/shortcode-lists.php';
+require_once dirname( __FILE__ ) . '/inc/shortcode-permalinks.php';
 require_once dirname( __FILE__ ) . '/inc/shortcode-spacer.php';

@@ -30,6 +30,10 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 function sbs_display_permalink( $atts ) {
 
+	// Enqueue the stylesheet. No need for the javascript.
+	wp_enqueue_style( 'sbs-style' );
+	wp_enqueue_style( 'bootstrap-3' );
+
 	// Default attributes.
 	$defaults = array(
 		'id'     => null,
@@ -49,33 +53,32 @@ function sbs_display_permalink( $atts ) {
 	}
 
 	// Start building the HTML anchor tag.
-	$output = sprintf( '<a href="%s"', esc_url( get_permalink( $atts['id'] ) ) );
-
+	$url = esc_url( get_permalink( $atts['id'] ) );
+	$target = '';
 	// Add target attribute if provided.
 	if ( ! empty( $atts['target'] ) ) {
-		$output .= sprintf( ' target="%s"', esc_attr( $atts['target'] ) );
+		$target = esc_attr( $atts['target'] );
 	}
 
+	$class = '';
 	// Add class attribute if provided.
 	if ( ! empty( $atts['class'] ) ) {
-		$output .= sprintf( ' class="%s"', esc_attr( $atts['class'] ) );
+		$class = esc_attr( $atts['class'] );
 	}
 
+	$rel = '';
 	// Add rel attribute if provided.
 	if ( ! empty( $atts['rel'] ) ) {
-		$output .= sprintf( ' rel="%s"', esc_attr( $atts['rel'] ) );
+		$rel = esc_attr( $atts['rel'] );
 	}
 
 	// Add title attribute if provided, otherwise use post title.
 	$title   = ! empty( $atts['title'] ) ? esc_attr( $atts['title'] ) : esc_attr( get_the_title( $atts['id'] ) );
-	$output .= sprintf( ' title="%s"', $title );
 
 	// Add link text if provided, otherwise use post title.
 	$text    = ! empty( $atts['text'] ) ? esc_html( $atts['text'] ) : esc_html( get_the_title( $atts['id'] ) );
-	$output .= sprintf( '>%s', $text );
 
-	// Close anchor tag.
-	$output .= '</a>';
+	$output = sprintf( '<a href="%s" target="%s" class="%s" rel="%s" title="%s">%s</a>', $url, $target, $class, $rel, $title, $text );
 
 	return $output;
 }
